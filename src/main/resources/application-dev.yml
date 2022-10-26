@@ -1,0 +1,23 @@
+# Spring
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  application:
+    name: Api-Gerenciamento-Campus
+
+# H2 database
+  datasource:
+    url: jdbc:h2:mem:campus
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+
+# JPA
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  sql:
+    init:
+      platform: h2
